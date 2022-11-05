@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pictor</title>
+    <script type="module" src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+
+<body>
+    <div class="card-body" id="page">
+        <h1>
+            Pictor
+        </h1>
+        <h2>A discovery tool for IIIF manifests</h2>
+        <a target="_blank" href="https://iiif.io/"><img src="iiif.png" alt="thumbnail" width="70"></a>
+        <div>Search through <span id="total"></span> manifests</div>
+        <section><a href="https://github.com/TomDeneire/ulpia#readme" target="_blank">About</a></section>
+        <p></p>
+        <div class="card">
+            <table class="table">
+                <tr>
+                    <td>Search for a keyword</td>
+                    <td><input type="text" id="search" /></td>
+                    <td>e.g. <i>lipsius</i> or <i>lipsius + politica</i></td>
+                </tr>
+                <tr>
+                    <td>Or choose one of these random keywords</td>
+                    <td class="link-primary" style="cursor: pointer;" id="suggestions"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p></p>
+            <button id="submit" onClick="submit();" class="btn-outline-secondary">Submit</button>
+            <p></p>
+        </div>
+        <div>
+            <table id="result" class="table-sm table-bordered">
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

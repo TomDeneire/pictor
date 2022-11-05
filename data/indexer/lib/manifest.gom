@@ -1,0 +1,122 @@
+package lib
+
+import (
+	"database/sql"
+	"fmt"
+	"io"
+	"net/http"
+	"strconv"
+
+	_ "modernc.org/sqlite"
+)
+
+const sqlitefile = "/home/tdeneire/projects/code/js/iiif/data/db.sqlite3"
+
+func ManifestWrapper(manifests []string) error {
+
+	db, err := sql.Open("sqlite", sqlitefile)
+	if err != nil {
+		return fmt.Errorf("cannot open file: %v", err)
+	}
+	defer db.Close()
+
+	HandleManifest := func(i int) (interface{}, error) {
+
+		url := manifests[i]
+		resp, err := http.Get(url)
+		if err != nil {
+			return nil, err
+		}
+
+		defer resp.Body.Close()
+		manifest, err := io.ReadAll(resp.Body)
+		if err != nil {
+			return nil, err
+		}
+
+		// check if manifest has been handled
+		var token string
+		row := db.QueryRow("SELECT key FROM token WHERE url =?", url)
+		err = row.Scan(&token)
+		if err != nil {
+			if err == sql.ErrNoRows {
+				token = ""
+			} else {
+				panic(err)
+			}
+		}
+		if token != "" {
+			fmt.Println("SKIPPED", url)
+			return nil, nil
+		}
+
+		// handle manifest
+		info, err := ParseManifest(manifest)
+		if err != nil {
+			return nil, err
+		}
+
+		// log handling
+		stmt1, err := db.Prepare("INSERT INTO token (key, url) Values($1,$2)")
+		if err != nil {
+			return nil, fmt.Errorf("cannot prepare insert1: %v", err)
+		}
+		defer stmt1.Close()
+		_, err = stmt1.Exec(nil, url)
+		if err != nil {
+			return nil, fmt.Errorf("cannot exec stmt1: %v", err)
+		}
+
+		// log manifest metadata
+		stmt2, err := db.Prepare("INSERT INTO manifests (key, url, thumbnail, label, summary, hash) Values($1,$2,$3,$4,$5,$6)")
+		if err != nil {
+			return nil, fmt.Errorf("cannot prepare insert2: %v", err)
+		}
+		defer stmt2.Close()
+
+		var count string
+		row = db.QueryRow("SELECT key FROM token WHERE url =?", url)
+		err = row.Scan(&count)
+		if err != nil {
+			panic(err)
+		}
+		countInt, err := strconv.Atoi(count)
+		if err != nil {
+			panic(err)
+		}
+		hash, err := ToAscii85(countInt)
+		if err != nil {
+			panic(err)
+		}
+
+		_, err = stmt2.Exec(nil, url, info.Thumbnail, info.Label, info.Summary, hash)
+		if err != nil {
+			return nil, fmt.Errorf("cannot exec stmt2: %v", err)
+		}
+
+		// log index info
+		words, err := SplitIntoIndexWords(info.Label + info.Summary)
+		if err != nil {
+			panic(err)
+		}
+		for _, word := range words {
+			stmt3, err := db.Prepare("INSERT INTO lookup (key, word, hash) Values($1,$2,$3)")
+			if err != nil {
+				return nil, fmt.Errorf("cannot prepare insert3: %v", err)
+			}
+			defer stmt3.Close()
+			_, err = stmt3.Exec(nil, word, hash)
+			if err != nil {
+				return nil, fmt.Errorf("cannot exec stmt3: %v", err)
+			}
+		}
+
+		fmt.Println("HANDLED", manifests[i])
+
+		return nil, nil
+	}
+
+	NMap(len(manifests), 0, HandleManifest)
+
+	return nil
+}
