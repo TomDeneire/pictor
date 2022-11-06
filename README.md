@@ -10,13 +10,22 @@ The IIIF documentation does have an interesting [Guide to finding IIIF resources
 
 With that information I was able to scrape several of these collections and aggregate them into a corpus of close to 2,000,000 IIIF manifests. The resulting lists are available in this repository.
 
+Currently, it features manifests of the following institutions / collections:
+
+- [Anet library network](https://www.uantwerpen.be/en/projects/anet/)
+- [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
+- [University of Toronto](https://collections.library.utoronto.ca/)
+- [Digital Commonwealth](https://digitalcommonwealth.org/)
+- [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
+- [Wikidata](https://www.wikidata.org/)
+
 This repository has two purposes. One it offers a place to **store IIIF collections** and make them available for others. Two it uses those collections to host a **discovery tool** with a sample of them.
 
 ## Harvesting
 
 Harvesting the IIIF manifests was done with Python scripts that harvest these links in a variety of ways.
 
-Some institutions, like the [Bayerische Statsbibliothek](https://www.digitale-sammlungen.de/en/) or the [University of Toronto](https://collections.library.utoronto.ca/) let you scrape collections from their Presentation API (although not without a certain limit, unfortunately). Others, like [Digital Commonwealth](https://digitalcommonwealth.org/) have OAI-PMH that get you the necessary identifiers. Still others, like the [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/) or [Wikidata](https://www.wikidata.org/) offer a SPARL endpoint.
+Some institutions, like the [Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/en/) or the [University of Toronto](https://collections.library.utoronto.ca/) let you scrape collections from their Presentation API (although not without a certain limit, unfortunately). Others, like [Digital Commonwealth](https://digitalcommonwealth.org/) have OAI-PMH that get you the necessary identifiers. Still others, like the [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/) or [Wikidata](https://www.wikidata.org/) offer a SPARL endpoint.
 
 I harvested all manifests I could find for the repository and also made random 5,000 manifest samples of the collections for the discovery tool. For this, good old Unix tools are still amazingly good:
 
