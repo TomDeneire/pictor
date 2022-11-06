@@ -49,7 +49,7 @@ Finally, a web interface with some JavaScript allows to enter one or several key
 
 I also note that this is a completely serverless application, which hosts the necessary JSON statically and reads them into the browser memory upon loading the page. Obviously, this approach has its limitations, but, as with my [Ulpia](https://github.com/TomDeneire/ulpia) project, the benefits of not having to spin up a server for this tool outweigh the disadvantages.
 
-## Remarks
+## Technical remarks
 
 - Not only do institutions seem to neglect IIIF discovery somewhat, some also seem to actively oppose or limit it. I'm not going to name names, but I contacted one institution where the Presentation API was set up with a pager (each collection page offers a link to the next page), but it returned an invalid page at some point. The institution replied that this limit was introduced done on purpose. Sigh.
 
@@ -59,7 +59,7 @@ I also note that this is a completely serverless application, which hosts the ne
 
 ## Wild plan and call to action
 
-Finally, some daydreaming. I made the discovery tool for a sample of the manifests I have collected, but what I would really like to do is push the limits and see how many manifests I can process and still host the index on a static webpage. Currently, for ca. 30,000 manifests, the JSON files are only slightly above 10 MB, so this could definitely be scaled up.
+Finally, some daydreaming. I made the discovery tool for a sample of the manifests I have collected, but what I would really like to do is push the limits and see how many manifests I can process and still host the index on a static webpage. Currently, for ca. 30,000 manifests, the JSON files are only slightly above 10 MB in total, so this could definitely be scaled up.
 
 So if you or your instution want to participate in this experiment, or simply deposit your IIIF manifests in the central repository, please get in touch with me.
 
