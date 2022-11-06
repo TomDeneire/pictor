@@ -1,5 +1,7 @@
 # Discovering IIIF Manifests with Pictor
 
+![screenshot.png](screenshot.png)
+
 ## Idea
 
 Discovering [IIIF](https://iiif.io/) resources can be hard.
@@ -19,7 +21,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Wikidata](https://www.wikidata.org/)
 
-This repository has two purposes. One it offers a place to **store IIIF collections** and make them available for others. Two it uses those collections to host a **discovery tool** with a sample of them.
+This repository has two purposes. One it offers a place to **store IIIF collections** and make them available for others. Two it uses those collections to host a **discovery tool** with a sample of them:
 
 ## Harvesting
 
