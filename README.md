@@ -12,6 +12,8 @@ The IIIF documentation does have an interesting [Guide to finding IIIF resources
 
 With that information I was able to scrape several of these collections and aggregate them into a corpus of close to 2,000,000 IIIF manifests. The resulting lists are available in this repository.
 
+This repository has two purposes. One it offers a place to **store IIIF collections** and make them available for others. Two it uses those collections to host a [**discovery tool**](https://tomdeneire.github.io/pictor/) with a sample of them.
+
 Currently, it features manifests of the following institutions / collections:
 
 - [Anet library network](https://www.uantwerpen.be/en/projects/anet/)
@@ -20,8 +22,6 @@ Currently, it features manifests of the following institutions / collections:
 - [Digital Commonwealth](https://digitalcommonwealth.org/)
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Wikidata](https://www.wikidata.org/)
-
-This repository has two purposes. One it offers a place to **store IIIF collections** and make them available for others. Two it uses those collections to host a **discovery tool** with a sample of them:
 
 ## Harvesting
 
