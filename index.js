@@ -3,9 +3,12 @@
 var page = document.getElementById("page").innerHTML;
 document.getElementById("page").innerHTML = "Loading...";
 
-import identifiers from 'https://tomdeneire.github.io/pictor/identifiers.json' assert { type: 'json' };
-import metadata from 'https://tomdeneire.github.io/pictor/metadata.json' assert { type: 'json' };
-import index from 'https://tomdeneire.github.io/pictor/index.json' assert { type: 'json' };
+var resid = await fetch('https://tomdeneire.github.io/pictor/identifiers.json')
+const identifiers = await resid.json()
+var resmeta = await fetch('https://tomdeneire.github.io/pictor/metadata.json')
+const metadata = await resmeta.json()
+var resindex = await fetch('https://tomdeneire.github.io/pictor/index.json')
+const index = await resindex.json()
 
 document.getElementById("page").innerHTML = page;
 document.getElementById("total").innerHTML = Math.floor(
