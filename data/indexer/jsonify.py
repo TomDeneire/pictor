@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 
 # Constants
 
@@ -150,6 +151,7 @@ def replace_manifests():
         for line in reader:
             manifest = line.split(" ")[0]
             writer.write(line.replace(manifest, identifiers[manifest]))
+    shutil.copy(DB, "original_db.txt")
     os.remove(DB)
     os.rename("tmp.txt", DB)
 
