@@ -4,7 +4,7 @@
 
 ## Idea
 
-Discovering [IIIF](https://iiif.io/) resources can be hard.
+Discovering [IIIF](https://iiif.io/) resources can be challenging.
 
 Although the protocol does specify a dedicated [Discovery API](https://iiif.io/api/discovery/1.0/) it is not often implemented by institutions. (At [Anet](https://anet.be) we are guilty of the same). Moreover, this API has no straightforward way to obtain a full collection. It is certainly not as straightforward as with [OAI-PMH](https://www.openarchives.org/pmh/) for instance, that offers the verb `ListIdentifiers`.
 
