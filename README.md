@@ -22,6 +22,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Digital Commonwealth](https://digitalcommonwealth.org/)
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Wikidata](https://www.wikidata.org/)
+- [Gouda Time Machine](https://www.goudatijdmachine.nl/)
 
 ## Harvesting
 
