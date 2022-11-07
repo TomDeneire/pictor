@@ -45,7 +45,7 @@ In total, this process only takes a couple of hours for the current sample of ca
 
 ## Web application
 
-Finally, a web interface with some JavaScript allows to enter one or several keywords which are then looked up in the index. The resulting matches are presented as IIIF thumbnails, together with the manifest URL and the label metadata. A random selection of keywords is also present.
+Finally, a [web interface](https://tomdeneire.github.io/pictor/) with some JavaScript allows to enter one or several keywords which are then looked up in the index. The resulting matches are presented as IIIF thumbnails, together with the manifest URL and the label metadata. A random selection of keywords is also present.
 
 I also note that this is a completely serverless application, which hosts the necessary JSON statically and reads them into the browser memory upon loading the page. Obviously, this approach has its limitations, but, as with my [Ulpia](https://github.com/TomDeneire/ulpia) project, the benefits of not having to spin up a server for this tool outweigh the disadvantages.
 
