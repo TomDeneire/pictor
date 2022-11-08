@@ -1,3 +1,9 @@
+// Constants
+
+const Universal = "https://uv-v4.netlify.app/#?c=&m=&s=&cv=&manifest="
+const Mirador = "https://projectmirador.org/embed/?iiif-content="
+const Clover = "https://samvera-labs.github.io/clover-iiif/?iiif-content="
+
 // Load databases
 
 var page = document.getElementById("page").innerHTML;
@@ -89,7 +95,10 @@ window.submit = function () {
             let a = `<a target="_blank" href="${img}">
             <img src="${img}" alt="thumbnail" width="150"></a>`;
             let desc = metadata[hash]["L"] + "<p>" + `<a target="_blank" href="${url}">${url}</a>`;
-            html = `${html}<tr><td>${a}</td><td>${desc}</td></tr>`;
+            let viewers = `<p><a target="_blank" href="${Universal + url}">View with Universal</a>
+            <br><a target="_blank" href="${Mirador + url}">View with Mirador</a>
+            <br><a target="_blank" href="${Clover + url}">View with Clover</a>`
+            html = `${html}<tr><td>${a}</td><td>${desc + viewers}</td></tr>`;
         })
 
     } else { html = `${html}<tr><td></td><td>0 results</td></tr>` };
