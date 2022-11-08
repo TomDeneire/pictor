@@ -8,7 +8,7 @@ Discovering [IIIF](https://iiif.io/) resources can be challenging.
 
 Although the protocol does specify a dedicated [Discovery API](https://iiif.io/api/discovery/1.0/) it is not often implemented by institutions. (At [Anet](https://anet.be) we are guilty of the same). Moreover, this API has no straightforward way to obtain a full collection. It is certainly not as straightforward as with [OAI-PMH](https://www.openarchives.org/pmh/) for instance, that offers the verb `ListIdentifiers`.
 
-The IIIF documentation does have an interesting [Guide to finding IIIF resources](https://iiif.io/guides/finding_resources/) which features a list of IIIF collections.
+The IIIF documentation does have an interesting [Guide to finding IIIF resources](https://iiif.io/guides/finding_resources/) which features a list of IIIF collections. Moreover, there is also an initiative for a [IIIF Discovery Registry](https://registry.iiif.io/) and an [inventory of IIIF map collections](https://allmaps.org/).
 
 With that information I was able to scrape several of these collections and aggregate them into a corpus of close to 2,000,000 IIIF manifests. The resulting lists are available in this repository.
 
@@ -16,13 +16,19 @@ This repository has two purposes. One it offers a place to **store IIIF collecti
 
 Currently, it features manifests of the following institutions / collections:
 
+- [Allmaps](https://allmaps.org)
 - [Anet library network](https://www.uantwerpen.be/en/projects/anet/)
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
-- [University of Toronto](https://collections.library.utoronto.ca/)
+- [Digital Bodleian](https://digital.bodleian.ox.ac.uk/)
 - [Digital Commonwealth](https://digitalcommonwealth.org/)
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
-- [Wikidata](https://www.wikidata.org/)
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
+- [Mmmonk](https://www.mmmonk.be/)
+- [Museum-digital](https://www.museum-digital.de/)
+- [National Archives of Sweden](https://riksarkivet.se/)
+- [Universität Halle Library](https://digitale.bibliothek.uni-halle.de/)
+- [University of Toronto](https://collections.library.utoronto.ca/)
+- [Wikidata](https://www.wikidata.org/)
 
 ## Harvesting
 
@@ -44,6 +50,16 @@ The resulting triple store was then turned into a number of JSON files, includin
 
 In total, this process only takes a couple of hours for the current sample of ca. 30,000 manifests.
 
+Workflow, after harvesting and sampling into *_sample.txt files
+
+``` bash
+mv *_sample.txt ../indexer/corpus
+cd indexer
+./build.sh
+./pictor >> db.txt
+python3 jsonify.py
+```
+
 ## Web application
 
 Finally, a [web interface](https://tomdeneire.github.io/pictor/) with some JavaScript allows to enter one or several keywords which are then looked up in the index. The resulting matches are presented as IIIF thumbnails, together with the manifest URL and the label metadata. A random selection of keywords is also present.
@@ -52,7 +68,7 @@ I also note that this is a completely serverless application, which hosts the ne
 
 ## Technical remarks
 
-- Not only do institutions seem to neglect IIIF discovery somewhat, some also seem to actively oppose or limit it. I'm not going to name names, but I contacted one institution where the Presentation API was set up with a pager (each collection page offers a link to the next page), but it returned an invalid page at some point. The institution replied that this limit was introduced done on purpose. Sigh.
+- Not only do institutions seem to neglect IIIF discovery somewhat, some also seem to actively oppose or limit it. I'm not going to name names, but I contacted one institution where the Presentation API was set up with a pager (each collection page offers a link to the next page), but it returned an invalid page at some point. The institution replied that this limit was introduced on purpose. Sigh.
 
 - Parsing IIIF manifests (both version 2 and 3 manifests are current) with Go has taught me that a lot of institutions seem to implement their own interpretation of the API rather than follow the specifications. Mandatory fields are left out, fields have different data formats (strings instead of arrays and such), and so on.
 
@@ -65,3 +81,9 @@ Finally, some daydreaming. I made the discovery tool for a sample of the manifes
 So if you or your instution want to participate in this experiment, or simply deposit your IIIF manifests in the central repository, please get in touch with me.
 
 (I have also contact the people of the Internet Archive to see whether the list of [9.3M IIIF manifests](https://blog.archive.org/2015/10/23/zoom-in-to-9-3-million-internet-archive-books-and-images-through-iiif/) they used to offer, is still available somewhere, but no luck for now!).
+
+## Acknowledgements
+
+Since first publishing this project, many people have reached out with kind comments and useful suggestions. As a result, Pictor has become a better and more comprehensive tool!
+
+Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/aliwink), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), and anyone else I might forget...
