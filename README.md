@@ -26,7 +26,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Mmmonk](https://www.mmmonk.be/)
 - [Museum-digital](https://www.museum-digital.de/)
 - [National Archives of Sweden](https://riksarkivet.se/)
-- [Universität Halle Library](https://digitale.bibliothek.uni-halle.de/)
+- [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
 - [Wikidata](https://www.wikidata.org/)
 
@@ -68,7 +68,7 @@ I also note that this is a completely serverless application, which hosts the ne
 
 ## Technical remarks
 
-- Not only do institutions seem to neglect IIIF discovery somewhat, some also seem to actively oppose or limit it. I'm not going to name names, but I contacted one institution where the Presentation API was set up with a pager (each collection page offers a link to the next page), but it returned an invalid page at some point. The institution replied that this limit was introduced on purpose. Sigh.
+- Not only do institutions seem to neglect IIIF discovery somewhat, several of the APIs I used, suffered frustrating hiccups like timeouts, refused connections or faulty resumption tokens. When I first started working on this, it seemed as if some collections even actively tried to limit scraping or crawling, but to be fair, there was usually a technical issue and several of the institutions I contacted, replied in a really constructive and helpful way.
 
 - Parsing IIIF manifests (both version 2 and 3 manifests are current) with Go has taught me that a lot of institutions seem to implement their own interpretation of the API rather than follow the specifications. Mandatory fields are left out, fields have different data formats (strings instead of arrays and such), and so on.
 
@@ -86,4 +86,4 @@ So if you or your instution want to participate in this experiment, or simply de
 
 Since first publishing this project, many people have reached out with kind comments and useful suggestions. As a result, Pictor has become a better and more comprehensive tool!
 
-Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/aliwink), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), and anyone else I might forget...
+Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/aliwink), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), [Johannes Baiter](https://t.co/SncEqarYjL) and anyone else I might forget...
