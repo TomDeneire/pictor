@@ -1,0 +1,1 @@
+curl "https://www.e-codices.unifr.ch/de/search/?aSelectedFacets=&sQueryString=&sSearchField=fullText&iResultsPerPage=10000&sSortField=score" | pup 'div.btn-box a:first-child attr{href}' > links.txt && awk -F/ '{print "https://www.e-codices.unifr.ch/metadata/iiif/"$(NF-1)"-"$NF"/manifest.json"}' links.txt > ecodices.txt && rm links.txt

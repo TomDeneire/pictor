@@ -1,0 +1,1 @@
+ in {1..1493}; do curl "https://digi.vatlib.it/all/search?f[]=g%3A1&p=$i" | pup 'a.box-search-result-view-link attr{href}' >> links.txt; done && awk -F/ '{print "https://digi.vatlib.it/iiif/"$NF"/manifest.json"}' links.txt > vaticana.txt
