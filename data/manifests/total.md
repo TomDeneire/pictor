@@ -8,12 +8,28 @@ bayerische.txt.gz
 74300
 
 
+blb.txt.gz
+2191
+
+
+bnp.txt.gz
+3539
+
+
 bodleian.txt.gz
 18111
 
 
 brocade.txt.gz
 4110
+
+
+bvmm.txt.gz
+8096
+
+
+complutense.txt.gz
+968
 
 
 digitalcommonwealth.txt.gz
@@ -32,12 +48,20 @@ gtm.txt.gz
 165
 
 
+leiden.txt.gz
+460
+
+
 mmmonk.txt.gz
 642
 
 
 museumdigital.txt.gz
 234002
+
+
+parker.txt.gz
+584
 
 
 riksarkivet.txt.gz
@@ -61,4 +85,4 @@ wikidata.txt.gz
 
 
 total
-1987467
+2003305
