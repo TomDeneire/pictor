@@ -1,6 +1,7 @@
 package lib
 
 import (
+	"log"
 	"strings"
 )
 
@@ -41,32 +42,43 @@ func InterfaceToString(data interface{}) (string, error) {
 	if data == nil {
 		return "", nil
 	}
+
 	switch data.(type) {
 	case string:
 		result = data.(string)
-	case map[string]interface{}:
-		mapdata := data.(map[string]interface{})
-		for _, v := range mapdata {
-			result = v.([]interface{})[0].(string)
-			break
-		}
+
 	case map[string]string:
 		mapdata := data.(map[string]string)
 		for _, v := range mapdata {
 			result = v
 			break
 		}
-	case []string:
-		result = data.([]string)[0]
-	case []interface{}:
-		intdata := data.([]interface{})[0]
-		mapdata := intdata.(map[string]interface{})
+
+	case map[string]interface{}:
+		mapdata := data.(map[string]interface{})
 		for _, v := range mapdata {
-			result = v.(string)
+			result = v.([]interface{})[0].(string)
 			break
 		}
+
+	case []string:
+		result = data.([]string)[0]
+
+	case []interface{}:
+		intdata := data.([]interface{})[0]
+		switch intdata.(type) {
+		case map[string]interface{}:
+			mapdata := intdata.(map[string]interface{})
+			for _, v := range mapdata {
+				result = v.(string)
+				break
+			}
+		case string:
+			result = intdata.(string)
+		}
+
 	default:
-		panic("bad interface conversion")
+		log.Fatalf("bad interface conversion %v", data)
 	}
 
 	return result, nil
