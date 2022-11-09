@@ -8,7 +8,12 @@ Discovering [IIIF](https://iiif.io/) resources can be challenging.
 
 Although the protocol does specify a dedicated [Discovery API](https://iiif.io/api/discovery/1.0/) it is not often implemented by institutions. (At [Anet](https://anet.be) we are guilty of the same). Moreover, this API has no straightforward way to obtain a full collection. It is certainly not as straightforward as with [OAI-PMH](https://www.openarchives.org/pmh/) for instance, that offers the verb `ListIdentifiers`.
 
-The IIIF documentation does have an interesting [Guide to finding IIIF resources](https://iiif.io/guides/finding_resources/) which features a list of IIIF collections. Besides those, there is also an initiative for a [IIIF Discovery Registry](https://registry.iiif.io/), an [inventory of IIIF map collections](https://allmaps.org/) and the [Digitized Medieval Manuscript Database](https://digitizedmedievalmanuscripts.org/data#) that allows for filtering by IIIF compliancy.
+The IIIF documentation does have an interesting [Guide to finding IIIF resources](https://iiif.io/guides/finding_resources/) which features a list of IIIF collections. Similar sources are:
+
+- [IIIF Discovery Registry](https://registry.iiif.io/)
+- [Biblissima IIIF Collections - Manuscripts & Rare Books](https://iiif.biblissima.fr/collections/)
+- [Inventory of IIIF map collections](https://allmaps.org/)
+- [Digitized Medieval Manuscript Database](https://digitizedmedievalmanuscripts.org/data#) (which allows for filtering by IIIF compliancy)
 
 With that information I was able to scrape several of these collections and aggregate them into a corpus of close to 2,000,000 IIIF manifests. The resulting lists are available in this repository.
 
@@ -18,9 +23,13 @@ Currently, it features manifests of the following institutions / collections:
 
 - [Allmaps](https://allmaps.org)
 - [Anet library network](https://www.uantwerpen.be/en/projects/anet/)
+- [Badische Landesbibliothek Karlsruhe](https://www.blb-karlsruhe.de/)
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
 - [Biblioteca Apostolica Vaticana](https://www.vaticanlibrary.va/)
+- [Biblioteca Nacional de Portugal - Biblioteca Nacional Digital](https://bndigital.bnportugal.gov.pt/)
+- [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/)
 - [Digital Bodleian](https://digital.bodleian.ox.ac.uk/)
+- [Digital Collections (Leiden University Libraries)](https://digitalcollections.universiteitleiden.nl/)
 - [Digital Commonwealth](https://digitalcommonwealth.org/)
 - [E-codices](https://e-codices.unifr.ch/en)
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
@@ -28,6 +37,8 @@ Currently, it features manifests of the following institutions / collections:
 - [Mmmonk](https://www.mmmonk.be/)
 - [Museum-digital](https://www.museum-digital.de/)
 - [National Archives of Sweden](https://riksarkivet.se/)
+- [Patrimonio Digital Complutense](https://patrimoniodigital.ucm.es/s/patrimonio/page/inicio)
+- [Parker Library On the Web (Cambridge)](https://parker.stanford.edu/parker/)
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
 - [Wikidata](https://www.wikidata.org/)
