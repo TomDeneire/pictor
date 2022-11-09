@@ -39,7 +39,7 @@ Some institutions, like the [Bayerische Staatsbibliothek](https://www.digitale-s
 I harvested all manifests I could find for the repository and also made random 5,000 manifest samples of the collections for the discovery tool. For this, good old Unix tools are still amazingly good:
 
 ```bash
-shuf digitalcommonwealth.txt | head -n 5000 > digitalcommonwealth_sample.txt
+sort digitalcommonwealth.txt | uniq | shuf | head -n 5000 > digitalcommonwealth_sample.txt
 ```
 
 ## Indexing
