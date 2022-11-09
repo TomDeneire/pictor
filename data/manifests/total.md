@@ -60,3 +60,5 @@ wikidata.txt.gz
 196651
 
 
+total
+1987467
