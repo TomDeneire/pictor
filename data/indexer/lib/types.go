@@ -50,7 +50,7 @@ type ManifestV2 struct {
 			Label string `json:"label"`
 			Width int64  `json:"width"`
 		} `json:"canvases"`
-		Label string `json:"label"`
+		Label interface{} `json:"label"`
 	} `json:"sequences"`
 }
 

@@ -2,6 +2,7 @@ package lib
 
 import (
 	"encoding/json"
+	"fmt"
 	"strings"
 )
 
@@ -85,6 +86,7 @@ func ParseManifest(manifestData []byte) (ManifestInfo, error) {
 	} else {
 		info, err = parseV2(manifestData)
 		if err != nil {
+			fmt.Println("hallo", err)
 			return info, err
 		}
 	}
