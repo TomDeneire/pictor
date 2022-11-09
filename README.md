@@ -8,7 +8,7 @@ Discovering [IIIF](https://iiif.io/) resources can be challenging.
 
 Although the protocol does specify a dedicated [Discovery API](https://iiif.io/api/discovery/1.0/) it is not often implemented by institutions. (At [Anet](https://anet.be) we are guilty of the same). Moreover, this API has no straightforward way to obtain a full collection. It is certainly not as straightforward as with [OAI-PMH](https://www.openarchives.org/pmh/) for instance, that offers the verb `ListIdentifiers`.
 
-The IIIF documentation does have an interesting [Guide to finding IIIF resources](https://iiif.io/guides/finding_resources/) which features a list of IIIF collections. Moreover, there is also an initiative for a [IIIF Discovery Registry](https://registry.iiif.io/) and an [inventory of IIIF map collections](https://allmaps.org/).
+The IIIF documentation does have an interesting [Guide to finding IIIF resources](https://iiif.io/guides/finding_resources/) which features a list of IIIF collections. Besides those, there is also an initiative for a [IIIF Discovery Registry](https://registry.iiif.io/), an [inventory of IIIF map collections](https://allmaps.org/) and the [Digitized Medieval Manuscript Database](https://digitizedmedievalmanuscripts.org/data#) that allows for filtering by IIIF compliancy.
 
 With that information I was able to scrape several of these collections and aggregate them into a corpus of close to 2,000,000 IIIF manifests. The resulting lists are available in this repository.
 
