@@ -5,7 +5,7 @@ allmaps.txt.gz
 
 
 bayerische.txt.gz
-74300
+2805060
 
 
 blb.txt.gz
@@ -41,7 +41,7 @@ ecodices.txt.gz
 
 
 getty.txt.gz
-106620
+113186
 
 
 goettingen.txt.gz
@@ -49,7 +49,7 @@ goettingen.txt.gz
 
 
 gtm.txt.gz
-165
+83
 
 
 leiden.txt.gz
@@ -69,15 +69,15 @@ parker.txt.gz
 
 
 riksarkivet.txt.gz
-4039
+730
 
 
 unihalle.txt.gz
-335396
+76814
 
 
 utoronto.txt.gz
-22822
+22760
 
 
 vaticana.txt.gz
@@ -89,4 +89,4 @@ wikidata.txt.gz
 
 
 total
-2107582
+4582873
