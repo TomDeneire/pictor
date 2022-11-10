@@ -7,7 +7,7 @@ url = INITIAL
 
 while url:
     try:
-        manifests = requests.get(url).json()
+        manifests = requests.get(url, timeout=10).json()
     except Exception as e:
         print(url, e, datetime.datetime.now())
         break
