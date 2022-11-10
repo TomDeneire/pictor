@@ -1,0 +1,1 @@
+for i in {1..1198}; do curl "https://collections.britishart.yale.edu/?page=$i&q=&search_field=all_fields" | pup 'div.thumbnail a attr{href}' | awk -F/ '{print "https://manifests.collections.yale.edu/ycba/obj/"substr($NF,5)}' >> ycba.txt ; done
