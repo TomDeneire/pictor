@@ -1,5 +1,3 @@
-# initial code by https://github.com/alexander-winkler
-
 import requests
 from lxml import etree
 
@@ -14,14 +12,12 @@ def opac(start: int):
         "recordSchema": "picaxml",
         "startRecord": start,
     }
-    print(opac)
     res = requests.get(opac, params=params)
     tree = etree.fromstring(res.content)
     return tree
 
 
 hits = opac(1).find(".//{http://www.loc.gov/zing/srw/}numberOfRecords").text
-print(hits)
 hits = int(hits)
 
 manifests = []
@@ -32,8 +28,3 @@ for i in range(1, hits + 1, 100):
     ):
         manifest = f"https://manifests.sub.uni-goettingen.de/iiif/presentation/PPN{ppn.text}/manifest"
         print(manifest)
-        manifests.append(manifest)
-
-with open("subgoettingen.txt", "w") as OUT:
-    for m in manifests:
-        print(m, file=OUT)
