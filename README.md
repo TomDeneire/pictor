@@ -14,6 +14,7 @@ The IIIF documentation does have an interesting [Guide to finding IIIF resources
 - [Biblissima IIIF Collections - Manuscripts & Rare Books](https://iiif.biblissima.fr/collections/)
 - [Inventory of IIIF map collections](https://allmaps.org/)
 - [Digitized Medieval Manuscript Database](https://digitizedmedievalmanuscripts.org/data#) (which allows for filtering by IIIF compliancy)
+- [The IIIF Universe](https://graph.global/universes/iiif)
 
 With that information I was able to scrape several of these collections and aggregate them into a corpus of close to 2,000,000 IIIF manifests. The resulting lists are available in this repository.
 
@@ -99,4 +100,4 @@ So if you or your instution want to participate in this experiment, or simply de
 
 Since first publishing this project, many people have reached out with kind comments and useful suggestions. As a result, Pictor has become a better and more comprehensive tool!
 
-Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/aliwink), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), [Johannes Baiter](https://github.com/jbaiter), [Eduardo Fernández](https://orcid.org/0000-0001-9864-8734) and anyone else I might forget...
+Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/aliwink), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), [Johannes Baiter](https://github.com/jbaiter), [Eduardo Fernández](https://orcid.org/0000-0001-9864-8734), [Mek](https://mek.fyi/) and anyone else I might forget...
