@@ -9,11 +9,11 @@ bayerische.txt.gz
 
 
 blb.txt.gz
-2191
+2087
 
 
 bnp.txt.gz
-3539
+3371
 
 
 bodleian.txt.gz
@@ -29,7 +29,7 @@ bvmm.txt.gz
 
 
 complutense.txt.gz
-968
+922
 
 
 digitalcommonwealth.txt.gz
@@ -44,12 +44,16 @@ getty.txt.gz
 106620
 
 
+goettingen.txt.gz
+104643
+
+
 gtm.txt.gz
 165
 
 
 leiden.txt.gz
-460
+439
 
 
 mmmonk.txt.gz
@@ -61,7 +65,7 @@ museumdigital.txt.gz
 
 
 parker.txt.gz
-584
+557
 
 
 riksarkivet.txt.gz
@@ -85,4 +89,4 @@ wikidata.txt.gz
 
 
 total
-2003305
+2107582
