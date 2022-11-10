@@ -1,4 +1,5 @@
 import requests
+import datetime
 
 INITIAL = "https://api.digitale-sammlungen.de/iiif/presentation/v2/collection/top?cursor=initial"
 
@@ -8,7 +9,7 @@ while url:
     try:
         manifests = requests.get(url).json()
     except Exception as e:
-        print(url, e)
+        print(url, e, datetime.datetime.now())
         break
     for manifest in manifests["manifests"]:
         print(manifest["@id"])
