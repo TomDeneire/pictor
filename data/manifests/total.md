@@ -72,6 +72,10 @@ riksarkivet.txt.gz
 730
 
 
+scta.txt.gz
+40
+
+
 unihalle.txt.gz
 76814
 
@@ -88,5 +92,9 @@ wikidata.txt.gz
 196651
 
 
+ycba.txt.gz
+119800
+
+
 total
-4582873
+4702713
