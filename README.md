@@ -40,6 +40,7 @@ Currently, it features manifests of the following institutions / collections:
 - [National Archives of Sweden](https://riksarkivet.se/)
 - [Patrimonio Digital Complutense](https://patrimoniodigital.ucm.es/s/patrimonio/page/inicio)
 - [Parker Library On the Web (Cambridge)](https://parker.stanford.edu/parker/)
+- [Scholastic Commentaries and Texts Archive](https://scta.info/)
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
 - [Wikidata](https://www.wikidata.org/)
