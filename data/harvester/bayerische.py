@@ -8,7 +8,7 @@ while url:
     try:
         manifests = requests.get(url).json()
     except Exception as e:
-        print(url)
+        print(url, e)
         break
     for manifest in manifests["manifests"]:
         print(manifest["@id"])
