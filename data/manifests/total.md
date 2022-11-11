@@ -80,6 +80,10 @@ scta.txt.gz
 40
 
 
+stanford.txt.gz
+864
+
+
 unihalle.txt.gz
 76814
 
@@ -101,4 +105,4 @@ ycba.txt.gz
 
 
 total
-4757790
+4758654
