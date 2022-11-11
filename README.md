@@ -44,6 +44,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
 - [Wikidata](https://www.wikidata.org/)
+- [Wellcome Collection](https://wellcomecollection.org/)
 
 ## Harvesting
 
@@ -94,8 +95,6 @@ I also note that this is a completely serverless application, which hosts the ne
 Finally, some daydreaming. I made the discovery tool for a sample of the manifests I have collected, but what I would really like to do is push the limits and see how many manifests I can process and still host the index on a static webpage. Currently, for ca. 30,000 manifests, the JSON files are only slightly above 10 MB in total, so this could definitely be scaled up.
 
 So if you or your instution want to participate in this experiment, or simply deposit your IIIF manifests in the central repository, please get in touch with me.
-
-(I have also contact the people of the Internet Archive to see whether the list of [9.3M IIIF manifests](https://blog.archive.org/2015/10/23/zoom-in-to-9-3-million-internet-archive-books-and-images-through-iiif/) they used to offer, is still available somewhere, but no luck for now!).
 
 ## Acknowledgements
 
