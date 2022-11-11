@@ -22,7 +22,7 @@ document.getElementById("total").innerHTML = Math.floor(
 
 // Extract random suggestions
 
-var suggestions = ""
+var suggestions = "";
 var numberOfKeywords = Object.keys(index).length;
 for (let i = 0; i < 20; i++) {
     let random = Math.floor(Math.random() * numberOfKeywords);

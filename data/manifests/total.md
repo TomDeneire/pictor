@@ -52,6 +52,10 @@ gtm.txt.gz
 83
 
 
+heidelberg_digi.txt.gz
+55077
+
+
 leiden.txt.gz
 439
 
@@ -97,4 +101,4 @@ ycba.txt.gz
 
 
 total
-4702713
+4757790
