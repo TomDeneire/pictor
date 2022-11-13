@@ -36,6 +36,7 @@ Currently, it features manifests of the following institutions / collections:
 - [E-codices](https://e-codices.unifr.ch/en)
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
+- [Harvard Art MUseums](https://harvardartmuseums.org/)
 - [Mmmonk](https://www.mmmonk.be/)
 - [Museum-digital](https://www.museum-digital.de/)
 - [National Archives of Sweden](https://riksarkivet.se/)
