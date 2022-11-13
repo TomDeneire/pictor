@@ -4,6 +4,10 @@ allmaps.txt.gz
 142
 
 
+art_inst_chicago.txt.gz
+40891
+
+
 bayerische.txt.gz
 2805060
 
@@ -50,6 +54,10 @@ goettingen.txt.gz
 
 gtm.txt.gz
 83
+
+
+harvard.txt.gz
+242822
 
 
 heidelberg_digi.txt.gz
@@ -105,4 +113,4 @@ ycba.txt.gz
 
 
 total
-4758654
+5042367

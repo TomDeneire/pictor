@@ -24,6 +24,7 @@ Currently, it features manifests of the following institutions / collections:
 
 - [Allmaps](https://allmaps.org)
 - [Anet library network](https://www.uantwerpen.be/en/projects/anet/)
+- [Art Institute of Chicago](https://www.artic.edu/)
 - [Badische Landesbibliothek Karlsruhe](https://www.blb-karlsruhe.de/)
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
 - [Biblioteca Apostolica Vaticana](https://www.vaticanlibrary.va/)
