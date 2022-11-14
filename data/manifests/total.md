@@ -104,6 +104,10 @@ vaticana.txt.gz
 24571
 
 
+wellcome.txt.gz
+163416
+
+
 wikidata.txt.gz
 196651
 
@@ -113,4 +117,4 @@ ycba.txt.gz
 
 
 total
-5042367
+5205783
