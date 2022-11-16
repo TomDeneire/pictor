@@ -40,6 +40,10 @@ digitalcommonwealth.txt.gz
 963196
 
 
+dombibliothek_koeln.txt.gz
+1293
+
+
 ecodices.txt.gz
 2700
 
@@ -117,4 +121,4 @@ ycba.txt.gz
 
 
 total
-5205783
+5207076
