@@ -33,6 +33,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Digital Bodleian](https://digital.bodleian.ox.ac.uk/)
 - [Digital Collections (Leiden University Libraries)](https://digitalcollections.universiteitleiden.nl/)
 - [Digital Commonwealth](https://digitalcommonwealth.org/)
+- [Diözesan- und Dombibliothek Köln](https://dombibliothek-koeln.de/)
 - [E-codices](https://e-codices.unifr.ch/en)
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
