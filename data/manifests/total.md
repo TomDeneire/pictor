@@ -72,6 +72,10 @@ leiden.txt.gz
 439
 
 
+manuscriptorium.txt.gz
+848
+
+
 mmmonk.txt.gz
 642
 
@@ -108,6 +112,10 @@ vaticana.txt.gz
 24571
 
 
+villanova.txt.gz
+43873
+
+
 wellcome.txt.gz
 163416
 
@@ -121,4 +129,4 @@ ycba.txt.gz
 
 
 total
-5207076
+5251797
