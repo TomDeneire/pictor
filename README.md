@@ -38,6 +38,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
 - [Harvard Art MUseums](https://harvardartmuseums.org/)
+- [Manuscriptorium](https://manuscriptorium.com/)
 - [Mmmonk](https://www.mmmonk.be/)
 - [Museum-digital](https://www.museum-digital.de/)
 - [National Archives of Sweden](https://riksarkivet.se/)
@@ -46,6 +47,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Scholastic Commentaries and Texts Archive](https://scta.info/)
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
+- [Villanova Digital Library](https://digital.library.villanova.edu/)
 - [Wikidata](https://www.wikidata.org/)
 - [Wellcome Collection](https://wellcomecollection.org/)
 
