@@ -84,8 +84,16 @@ museumdigital.txt.gz
 234002
 
 
+oldenburg.txt.gz
+1149
+
+
 parker.txt.gz
 557
+
+
+potsdam.txt.gz
+1793
 
 
 riksarkivet.txt.gz
@@ -98,6 +106,22 @@ scta.txt.gz
 
 stanford.txt.gz
 864
+
+
+suubbremen.txt.gz
+135
+
+
+ulbbonn.txt.gz
+12469
+
+
+ulbduesseldorf.txt.gz
+444
+
+
+ulbfrankfurt.txt.gz
+237553
 
 
 unihalle.txt.gz
@@ -129,4 +153,4 @@ ycba.txt.gz
 
 
 total
-5251797
+5505340

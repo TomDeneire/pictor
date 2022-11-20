@@ -24,7 +24,7 @@ def processOAI(res):
     resumptionToken = resTok(tree)
 
 
-url = "https://digital.ub.uni-potsdam.de/oai/"
+url = "https://digital.lb-oldenburg.de/ihd/oai/"
 
 
 # First run
