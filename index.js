@@ -17,8 +17,7 @@ var resindex = await fetch('https://tomdeneire.github.io/pictor/index.json')
 const index = await resindex.json()
 
 document.getElementById("page").innerHTML = page;
-document.getElementById("total").innerHTML = Math.floor(
-	Object.keys(identifiers).length / 2);
+document.getElementById("total").innerHTML = Object.keys(identifiers).length;
 
 // Extract random suggestions
 

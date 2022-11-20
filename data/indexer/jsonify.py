@@ -1,3 +1,4 @@
+from copy import deepcopy
 import json
 import os
 import shutil
@@ -201,9 +202,24 @@ def make_metadata():
     with open(METADATA_DB, "w") as writer:
         writer.write(json.dumps(metadata))
 
+# Remove manifests from identifiers db
+# (only hashes are necessary for index.js!)
+
+
+def remove_manifests():
+    with open(IDENTIFIERS_DB, "r") as reader:
+        identifiers = json.loads(reader.read())
+        new_identifiers = deepcopy(identifiers)
+        for item in identifiers:
+            if item.startswith("http") and "://" in item:
+                del new_identifiers[item]
+    with open(IDENTIFIERS_DB, "w") as writer:
+        writer.write(json.dumps(new_identifiers))
+
 
 if __name__ == "__main__":
     make_identifiers()
     replace_manifests()
     make_index()
     make_metadata()
+    remove_manifests()
