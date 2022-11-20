@@ -24,12 +24,12 @@ Currently, it features manifests of the following institutions / collections:
 
 - [Allmaps](https://allmaps.org)
 - [Anet library network](https://www.uantwerpen.be/en/projects/anet/)
-- [Art Institute of Chicago](https://www.artic.edu/)
+- [Art Institute of Chicago](https://www.artic.edu/) *
 - [Badische Landesbibliothek Karlsruhe](https://www.blb-karlsruhe.de/)
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
 - [Biblioteca Apostolica Vaticana](https://www.vaticanlibrary.va/)
 - [Biblioteca Nacional de Portugal - Biblioteca Nacional Digital](https://bndigital.bnportugal.gov.pt/)
-- [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/)
+- [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/) *
 - [Digital Bodleian](https://digital.bodleian.ox.ac.uk/)
 - [Digital Collections (Leiden University Libraries)](https://digitalcollections.universiteitleiden.nl/)
 - [Digital Commonwealth](https://digitalcommonwealth.org/)
@@ -37,13 +37,14 @@ Currently, it features manifests of the following institutions / collections:
 - [Digitale Sammlungen Universität Bremen](https://brema.suub.uni-bremen.de)
 - [Digitale Sammlungen Universität Bonn](http://digitale-sammlungen.ulb.uni-bonn.de)
 - [Digitale Sammlungen Universität Düsseldorf](https://digital.ub.uni-duesseldorf.de)
-- [Digitale Sammlungen Universität Frankfurt](https://digital.ub.uni-frankfurt.de)
+- [Digitale Sammlungen Universität Frankfurt](https://digital.ub.uni-frankfurt.de) *
 - [Diözesan- und Dombibliothek Köln](https://dombibliothek-koeln.de/)
 - [E-codices](https://e-codices.unifr.ch/en)
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
+- [Göttinger Digitalisierungszentrum](https://manifests.sub.uni-goettingen.de/) *
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
 - [Harvard Art MUseums](https://harvardartmuseums.org/)
-- [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/)
+- [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/) *
 - [Landesbibliothek Oldenburg Digital](https://digital.lb-oldenburg.de)
 - [Manuscriptorium](https://manuscriptorium.com/)
 - [Mmmonk](https://www.mmmonk.be/)
@@ -54,9 +55,12 @@ Currently, it features manifests of the following institutions / collections:
 - [Scholastic Commentaries and Texts Archive](https://scta.info/)
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
-- [Villanova Digital Library](https://digital.library.villanova.edu/)
+- [Villanova Digital Library](https://digital.library.villanova.edu/) *
 - [Wikidata](https://www.wikidata.org/)
-- [Wellcome Collection](https://wellcomecollection.org/)
+- [Wellcome Collection](https://wellcomecollection.org/) *
+- [Yale Center for British Art](https://britishart.yale.edu/) *
+
+(* = No sample in the discovery tool yet)
 
 ## Harvesting
 
