@@ -62,7 +62,7 @@ Currently, it features manifests of the following institutions / collections:
 
 Harvesting the IIIF manifests was done with Python scripts in a variety of ways.
 
-Some institutions, like the [Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/en/) or the [University of Toronto](https://collections.library.utoronto.ca/) let you scrape collections from their Presentation API. Others, like [Digital Commonwealth](https://digitalcommonwealth.org/) have OAI-PMH that get you the necessary identifiers. Still others, like the [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/) or [Wikidata](https://www.wikidata.org/) offer a SPARL endpoint.
+Many institutions, like the [Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/en/) or the [University of Toronto](https://collections.library.utoronto.ca/) let you scrape collections from their Presentation API. Others, like [Digital Commonwealth](https://digitalcommonwealth.org/) have OAI-PMH that get you the necessary identifiers. Still others, like the [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/) or [Wikidata](https://www.wikidata.org/) offer a SPARL endpoint.
 
 I harvested all manifests I could find for the repository and also made random 5,000 manifest samples of the collections for the discovery tool. For this, good old Unix tools are still amazingly good:
 
