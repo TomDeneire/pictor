@@ -1,0 +1,1 @@
+curl -S "https://iiif.ub.uni-leipzig.de/static/collections/toplevel.json" | jq '.["collections"] | .[] | .["@id"] ' | xargs -I{} curl -S {} | jq '.["manifests"] | .[] | .["@id"]' | tr -d "\"" | sort | uniq
