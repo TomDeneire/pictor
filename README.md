@@ -29,6 +29,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
 - [Biblioteca Apostolica Vaticana](https://www.vaticanlibrary.va/)
 - [Biblioteca Nacional de Portugal - Biblioteca Nacional Digital](https://bndigital.bnportugal.gov.pt/)
+- [Biblioteca Virtual of the Banco de la República de Colombia](***) *
 - [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/) *
 - [Digital Bodleian](https://digital.bodleian.ox.ac.uk/)
 - [Digital Collections (Leiden University Libraries)](https://digitalcollections.universiteitleiden.nl/)
@@ -44,6 +45,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Göttinger Digitalisierungszentrum](https://manifests.sub.uni-goettingen.de/) *
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
 - [Harvard Art MUseums](https://harvardartmuseums.org/)
+- [Iberoamerikanisches Institut Berlin](***) *
 - [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/) *
 - [Landesbibliothek Oldenburg Digital](https://digital.lb-oldenburg.de)
 - [Manuscriptorium](https://manuscriptorium.com/)
@@ -52,7 +54,10 @@ Currently, it features manifests of the following institutions / collections:
 - [National Archives of Sweden](https://riksarkivet.se/)
 - [Patrimonio Digital Complutense](https://patrimoniodigital.ucm.es/s/patrimonio/page/inicio)
 - [Parker Library On the Web (Cambridge)](https://parker.stanford.edu/parker/)
+- [Princeton University Library](https://figgy.princeton.edu) *
 - [Scholastic Commentaries and Texts Archive](https://scta.info/)
+- [Staatsbibliothek Berlin](***) *
+- [University Library Leipzig](***) *
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
 - [Villanova Digital Library](https://digital.library.villanova.edu/) *

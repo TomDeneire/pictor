@@ -32,6 +32,10 @@ bvmm.txt.gz
 8096
 
 
+Colomb.txt.gz
+5568
+
+
 complutense.txt.gz
 922
 
@@ -68,6 +72,10 @@ heidelberg_digi.txt.gz
 55077
 
 
+iai.txt.gz
+40414
+
+
 leiden.txt.gz
 439
 
@@ -88,6 +96,10 @@ oldenburg.txt.gz
 1149
 
 
+paderborn.txt.gz
+11206
+
+
 parker.txt.gz
 557
 
@@ -96,8 +108,16 @@ potsdam.txt.gz
 1793
 
 
+princeton.txt.gz
+43474
+
+
 riksarkivet.txt.gz
 730
+
+
+sbb.txt.gz
+183306
 
 
 scta.txt.gz
@@ -110,6 +130,10 @@ stanford.txt.gz
 
 suubbremen.txt.gz
 135
+
+
+ubleipzig.txt.gz
+13731
 
 
 ulbbonn.txt.gz
@@ -153,4 +177,4 @@ ycba.txt.gz
 
 
 total
-5505340
+5803039
