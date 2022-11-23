@@ -29,7 +29,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
 - [Biblioteca Apostolica Vaticana](https://www.vaticanlibrary.va/)
 - [Biblioteca Nacional de Portugal - Biblioteca Nacional Digital](https://bndigital.bnportugal.gov.pt/)
-- [Biblioteca Virtual of the Banco de la República de Colombia](***) *
+- [Biblioteca Virtual of the Banco de la República de Colombia](https://babel.banrepcultural.org) *
 - [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/) *
 - [Digital Bodleian](https://digital.bodleian.ox.ac.uk/)
 - [Digital Collections (Leiden University Libraries)](https://digitalcollections.universiteitleiden.nl/)
@@ -121,4 +121,4 @@ So if you or your instution want to participate in this experiment, or simply de
 
 Since first publishing this project, many people have reached out with kind comments and useful suggestions. As a result, Pictor has become a better and more comprehensive tool!
 
-Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/alexander-winkler), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), [Johannes Baiter](https://github.com/jbaiter), [Eduardo Fernández](https://orcid.org/0000-0001-9864-8734), [Mek](https://mek.fyi/) and anyone else I might forget...
+Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/alexander-winkler), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), [Johannes Baiter](https://github.com/jbaiter), [Eduardo Fernández](https://orcid.org/0000-0001-9864-8734), [Mek](https://mek.fyi/), [Jörg Lehmann](@jrglmn@mastodon.social) and anyone else I might forget...
