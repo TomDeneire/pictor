@@ -28,9 +28,9 @@ Currently, it features manifests of the following institutions / collections:
 - [Badische Landesbibliothek Karlsruhe](https://www.blb-karlsruhe.de/)
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
 - [Biblioteca Apostolica Vaticana](https://www.vaticanlibrary.va/)
-- [Biblioteca Digital de Cuba](http://iiif.sld.cu/) *
+- [Biblioteca Digital de Cuba](http://iiif.sld.cu/)
 - [Biblioteca Nacional de Portugal - Biblioteca Nacional Digital](https://bndigital.bnportugal.gov.pt/)
-- [Biblioteca Virtual of the Banco de la República de Colombia](https://babel.banrepcultural.org) *
+- [Biblioteca Virtual of the Banco de la República de Colombia](https://babel.banrepcultural.org)
 - [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/) *
 - [Digital Bodleian](https://digital.bodleian.ox.ac.uk/)
 - [Digital Collections (Leiden University Libraries)](https://digitalcollections.universiteitleiden.nl/)
@@ -39,17 +39,17 @@ Currently, it features manifests of the following institutions / collections:
 - [Digitale Sammlungen Universität Bremen](https://brema.suub.uni-bremen.de)
 - [Digitale Sammlungen Universität Bonn](http://digitale-sammlungen.ulb.uni-bonn.de)
 - [Digitale Sammlungen Universität Düsseldorf](https://digital.ub.uni-duesseldorf.de)
-- [Digitale Sammlungen Universität Frankfurt](https://digital.ub.uni-frankfurt.de) *
+- [Digitale Sammlungen Universität Frankfurt](https://digital.ub.uni-frankfurt.de)
 - [Diözesan- und Dombibliothek Köln](https://dombibliothek-koeln.de/)
 - [E-codices](https://e-codices.unifr.ch/en)
 - [Europeana](https://www.europeana.eu/en) *
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
-- [Göttinger Digitalisierungszentrum](https://manifests.sub.uni-goettingen.de/) *
+- [Göttinger Digitalisierungszentrum](https://manifests.sub.uni-goettingen.de/)
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
 - [Harvard Art MUseums](https://harvardartmuseums.org/)
-- [Iberoamerikanisches Institut Berlin](https://www.iai.spk-berlin.de/startseite.html) *
+- [Iberoamerikanisches Institut Berlin](https://www.iai.spk-berlin.de/startseite.html)
 - [IIIF Universe](https://graph.global/universes/iiif) *
-- [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/) *
+- [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/)
 - [Landesbibliothek Oldenburg Digital](https://digital.lb-oldenburg.de)
 - [Manuscriptorium](https://manuscriptorium.com/)
 - [Mmmonk](https://www.mmmonk.be/)
@@ -57,16 +57,16 @@ Currently, it features manifests of the following institutions / collections:
 - [National Archives of Sweden](https://riksarkivet.se/)
 - [Patrimonio Digital Complutense](https://patrimoniodigital.ucm.es/s/patrimonio/page/inicio)
 - [Parker Library On the Web (Cambridge)](https://parker.stanford.edu/parker/)
-- [Princeton University Library](https://figgy.princeton.edu) *
+- [Princeton University Library](https://figgy.princeton.edu)
 - [Scholastic Commentaries and Texts Archive](https://scta.info/)
-- [Staatsbibliothek Berlin](https://staatsbibliothek-berlin.de/en/) *
-- [Universitätsbibliothek Leipzig](https://www.ub.uni-leipzig.de/en/home/) *
+- [Staatsbibliothek Berlin](https://staatsbibliothek-berlin.de/en/)
+- [Universitätsbibliothek Leipzig](https://www.ub.uni-leipzig.de/en/home/)
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
-- [Villanova Digital Library](https://digital.library.villanova.edu/) *
+- [Villanova Digital Library](https://digital.library.villanova.edu/)
 - [Wikidata](https://www.wikidata.org/)
-- [Wellcome Collection](https://wellcomecollection.org/) *
-- [Yale Center for British Art](https://britishart.yale.edu/) *
+- [Wellcome Collection](https://wellcomecollection.org/)
+- [Yale Center for British Art](https://britishart.yale.edu/)
 
 (* = No sample in the discovery tool yet)
 
@@ -76,11 +76,13 @@ Harvesting the IIIF manifests was done with Python scripts in a variety of ways.
 
 Many institutions, like the [Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/en/) or the [University of Toronto](https://collections.library.utoronto.ca/) let you scrape collections from their Presentation API. Others, like [Digital Commonwealth](https://digitalcommonwealth.org/) have OAI-PMH that get you the necessary identifiers. Still others, like the [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/) or [Wikidata](https://www.wikidata.org/) offer a SPARL endpoint.
 
-I harvested all manifests I could find for the repository and also made random 5,000 manifest samples of the collections for the discovery tool. For this, good old Unix tools are still amazingly good:
+I harvested all manifests I could find for the repository and also made random 1,000 manifest samples of the collections for the discovery tool. For this, good old Unix tools are still amazingly good:
 
 ```bash
 sort digitalcommonwealth.txt | uniq | shuf | head -n 5000 > digitalcommonwealth_sample.txt
 ```
+
+(Update 24 November 2022: at this point in the project, I was forced to switch from 5K to 1K samples from these collections, because of the sheer volume of the material. So at the moment the discovery tool's results are somewhat skewed because some collections are more represented than others. I plan to remedy this in the future with a full re-run, but it will be a while before I get round to this)
 
 ## Indexing
 
@@ -124,4 +126,4 @@ So if you or your instution want to participate in this experiment, or simply de
 
 Since first publishing this project, many people have reached out with kind comments and useful suggestions. As a result, Pictor has become a better and more comprehensive tool!
 
-Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/alexander-winkler), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), [Johannes Baiter](https://github.com/jbaiter), [Eduardo Fernández](https://orcid.org/0000-0001-9864-8734), [Mek](https://mek.fyi/), [Jörg Lehmann](@jrglmn@mastodon.social) and anyone else I might forget...
+Special thanks go to [Etienne Posthumus](https://github.com/epoz), [Bob Coret](https://twitter.com/coret), [Alexander Winkler](https://github.com/alexander-winkler), [Glen Robson](https://github.com/glenrobson), [Jules Schoonman](https://sammeltassen.nl/), [Johannes Baiter](https://github.com/jbaiter), [Eduardo Fernández](https://orcid.org/0000-0001-9864-8734), [Mek](https://mek.fyi/), [Jörg Lehmann](@jrglmn@mastodon.social), [Jolan Wuyts](https://github.com/Hobbesball) and anyone else I might forget...
