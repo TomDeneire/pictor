@@ -32,12 +32,16 @@ bvmm.txt.gz
 8096
 
 
-Colomb.txt.gz
+colomb.txt.gz
 5568
 
 
 complutense.txt.gz
 922
+
+
+cuba.txt.gz
+45
 
 
 digitalcommonwealth.txt.gz
@@ -50,6 +54,10 @@ dombibliothek_koeln.txt.gz
 
 ecodices.txt.gz
 2700
+
+
+europeana.txt.gz
+132867
 
 
 getty.txt.gz
@@ -74,6 +82,10 @@ heidelberg_digi.txt.gz
 
 iai.txt.gz
 40414
+
+
+iiif_universe.txt.gz
+14930
 
 
 leiden.txt.gz
@@ -109,7 +121,7 @@ potsdam.txt.gz
 
 
 princeton.txt.gz
-43474
+41096
 
 
 riksarkivet.txt.gz
@@ -177,4 +189,4 @@ ycba.txt.gz
 
 
 total
-5803039
+5948503

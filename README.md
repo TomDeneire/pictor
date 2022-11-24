@@ -28,6 +28,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Badische Landesbibliothek Karlsruhe](https://www.blb-karlsruhe.de/)
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
 - [Biblioteca Apostolica Vaticana](https://www.vaticanlibrary.va/)
+- [Biblioteca Digital de Cuba](http://iiif.sld.cu/) *
 - [Biblioteca Nacional de Portugal - Biblioteca Nacional Digital](https://bndigital.bnportugal.gov.pt/)
 - [Biblioteca Virtual of the Banco de la República de Colombia](https://babel.banrepcultural.org) *
 - [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/) *
@@ -41,11 +42,13 @@ Currently, it features manifests of the following institutions / collections:
 - [Digitale Sammlungen Universität Frankfurt](https://digital.ub.uni-frankfurt.de) *
 - [Diözesan- und Dombibliothek Köln](https://dombibliothek-koeln.de/)
 - [E-codices](https://e-codices.unifr.ch/en)
+- [Europeana](https://www.europeana.eu/en) *
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Göttinger Digitalisierungszentrum](https://manifests.sub.uni-goettingen.de/) *
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
 - [Harvard Art MUseums](https://harvardartmuseums.org/)
-- [Iberoamerikanisches Institut Berlin](***) *
+- [Iberoamerikanisches Institut Berlin](https://www.iai.spk-berlin.de/startseite.html) *
+- [IIIF Universe](https://graph.global/universes/iiif) *
 - [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/) *
 - [Landesbibliothek Oldenburg Digital](https://digital.lb-oldenburg.de)
 - [Manuscriptorium](https://manuscriptorium.com/)
@@ -56,8 +59,8 @@ Currently, it features manifests of the following institutions / collections:
 - [Parker Library On the Web (Cambridge)](https://parker.stanford.edu/parker/)
 - [Princeton University Library](https://figgy.princeton.edu) *
 - [Scholastic Commentaries and Texts Archive](https://scta.info/)
-- [Staatsbibliothek Berlin](***) *
-- [University Library Leipzig](***) *
+- [Staatsbibliothek Berlin](https://staatsbibliothek-berlin.de/en/) *
+- [Universitätsbibliothek Leipzig](https://www.ub.uni-leipzig.de/en/home/) *
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
 - [Villanova Digital Library](https://digital.library.villanova.edu/) *
