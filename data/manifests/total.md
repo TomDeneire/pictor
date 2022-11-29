@@ -4,10 +4,6 @@ allmaps.txt.gz
 142
 
 
-art_inst_chicago.txt.gz
-40891
-
-
 bayerische.txt.gz
 2805060
 
@@ -193,4 +189,4 @@ ycba.txt.gz
 
 
 total
-5949916
+5909025
