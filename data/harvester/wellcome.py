@@ -1,4 +1,3 @@
-
 import requests
 
 INITIAL = "https://iiif.wellcomecollection.org/presentation/v2/collections"

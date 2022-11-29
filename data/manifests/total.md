@@ -96,6 +96,10 @@ manuscriptorium.txt.gz
 848
 
 
+metropolitan_publications.txt.gz
+1413
+
+
 mmmonk.txt.gz
 642
 
@@ -189,4 +193,4 @@ ycba.txt.gz
 
 
 total
-5948503
+5949916
