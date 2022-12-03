@@ -24,10 +24,10 @@ document.getElementById("total").innerHTML = Object.keys(identifiers).length;
 var suggestions = "";
 var numberOfKeywords = Object.keys(index).length;
 for (let i = 0; i < 20; i++) {
-	let random = Math.floor(Math.random() * numberOfKeywords);
-	let keyword = Object.keys(index)[random];
-	let a = `<a onclick="document.getElementById('search').value = '${keyword}'; submit()">${keyword}</a> `;
-	suggestions = suggestions + a;
+    let random = Math.floor(Math.random() * numberOfKeywords);
+    let keyword = Object.keys(index)[random];
+    let a = `<a onclick="document.getElementById('search').value = '${keyword}'; submit()">${keyword}</a> `;
+    suggestions = suggestions + a;
 }
 document.getElementById("suggestions").innerHTML = suggestions
 
@@ -35,77 +35,77 @@ document.getElementById("suggestions").innerHTML = suggestions
 
 var input = document.getElementById("search");
 input.addEventListener("keypress", function(event) {
-	// If the user presses the "Enter" key on the keyboard
-	if (event.key === "Enter") {
-		event.preventDefault();
-		// Trigger the button element with a click
-		document.getElementById("submit").click();
-	}
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("submit").click();
+    }
 });
 
 
 // Help functions
 
 function onlyUnique(value, index, self) {
-	return self.indexOf(value) === index;
+    return self.indexOf(value) === index;
 }
 
 // Submit function
 
 window.submit = function() {
-	document.getElementById("result").innerHTML = "";
-	// Validate search input
-	let search = document.getElementById("search").value;
-	search = search.toLowerCase();
-	if (search == "") {
-		return
-	}
-	// Perform search
-	let searches = search.split("+");
-	let result = [];
-	searches.forEach(term => {
-		term = term.trim()
-		let termResult = index[term];
-		if (termResult != null) {
-			result = result.concat(termResult);
-		};
-	});
-	// Apply "+"
-	if (searches.length > 1) {
-		searches.forEach(term => {
-			term = term.trim();
-			let termResult = index[term];
-			if (termResult != null) {
-				result = result.filter(x => termResult.includes(x));
-			} else {
-				result = [];
-			};
-		});
-		result = result.filter(onlyUnique);
-	};
-	// Fill result template
-	let html = "<table>";
-	if (result != null) {
-		let size = Object.keys(result).length;
-		html = `${html}<tr><td></td><td>${size} results</td></tr>`
-		result.forEach(hash => {
-			let url = identifiers[hash];
-			let img = metadata[hash]["T"];
-			let a = `<a target="_blank" href="${img}">
+    document.getElementById("result").innerHTML = "";
+    // Validate search input
+    let search = document.getElementById("search").value;
+    search = search.toLowerCase();
+    if (search == "") {
+        return
+    }
+    // Perform search
+    let searches = search.split("+");
+    let result = [];
+    searches.forEach(term => {
+        term = term.trim()
+        let termResult = index[term];
+        if (termResult != null) {
+            result = result.concat(termResult);
+        };
+    });
+    // Apply "+"
+    if (searches.length > 1) {
+        searches.forEach(term => {
+            term = term.trim();
+            let termResult = index[term];
+            if (termResult != null) {
+                result = result.filter(x => termResult.includes(x));
+            } else {
+                result = [];
+            };
+        });
+        result = result.filter(onlyUnique);
+    };
+    // Fill result template
+    let html = "<table>";
+    if (result != null) {
+        let size = Object.keys(result).length;
+        html = `${html}<tr><td></td><td>${size} results</td></tr>`
+        result.forEach(hash => {
+            let url = identifiers[hash];
+            let img = metadata[hash]["T"];
+            let a = `<a target="_blank" href="${img}">
             <img src="${img}" alt="thumbnail" width="150"></a>`;
-			let desc = metadata[hash]["L"] + "<p>" + `<a target="_blank" href="${url}">${url}</a>`;
-			let viewers = `<p><a target="_blank" href="${Universal + url}">View with Universal</a>
+            let desc = metadata[hash]["L"] + "<p>" + `<a target="_blank" href="${url}">${url}</a>`;
+            let viewers = `<p><a target="_blank" href="${Universal + url}">View with Universal</a>
             <br><a target="_blank" href="${Mirador + url}">View with Mirador</a>
             <br><a target="_blank" href="${Clover + url}">View with Clover</a>`
-			html = `${html}<tr><td>${a}</td><td>${desc + viewers}</td></tr>`;
-		})
+            html = `${html}<tr><td>${a}</td><td>${desc + viewers}</td></tr>`;
+        })
 
-	} else { html = `${html}<tr><td></td><td>0 results</td></tr>` };
-	document.getElementById("result").innerHTML = html + "</table>";
+    } else { html = `${html}<tr><td></td><td>0 results</td></tr>` };
+    document.getElementById("result").innerHTML = html + "</table>";
 }
 
 // Set focus
 
 window.onload = function() {
-	document.getElementById("search").focus();
+    document.getElementById("search").focus();
 }

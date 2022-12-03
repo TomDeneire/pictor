@@ -30,6 +30,7 @@ func parseV2(manifestData []byte) (ManifestInfo, error) {
 		info.Thumbnail = manifest.Sequences[0].Canvases[0].Images[0].Resource.ID
 	}
 	info.Label, err = InterfaceToString(manifest.Label)
+	fmt.Println(info.Label)
 	if err != nil {
 		return info, err
 	}
@@ -86,7 +87,7 @@ func ParseManifest(manifestData []byte) (ManifestInfo, error) {
 	} else {
 		info, err = parseV2(manifestData)
 		if err != nil {
-			fmt.Println("hallo", err)
+			fmt.Println("ERROR: ", err)
 			return info, err
 		}
 	}
