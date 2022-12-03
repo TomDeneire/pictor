@@ -47,7 +47,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
 - [Harvard Art MUseums](https://harvardartmuseums.org/)
 - [Iberoamerikanisches Institut Berlin](https://www.iai.spk-berlin.de/startseite.html)
-- [IIIF Universe](https://graph.global/universes/iiif) *
+- [IIIF Universe](https://graph.global/universes/iiif)
 - [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/)
 - [Landesbibliothek Oldenburg Digital](https://digital.lb-oldenburg.de)
 - [Manuscriptorium](https://manuscriptorium.com/)
