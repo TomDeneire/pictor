@@ -122,6 +122,10 @@ Finally, some daydreaming. I made the discovery tool for a sample of the manifes
 
 So if you or your instution want to participate in this experiment, or simply deposit your IIIF manifests in the central repository, please get in touch with me.
 
+## See also
+
+A very similar initiative to Pictor is the [Simple IIIF Discovery](https://research.ng-london.org.uk/ss-iiif/) by the National Gallery.
+
 ## Acknowledgements
 
 Since first publishing this project, many people have reached out with kind comments and useful suggestions. As a result, Pictor has become a better and more comprehensive tool!
