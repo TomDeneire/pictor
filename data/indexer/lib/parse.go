@@ -53,7 +53,8 @@ func parseV3(manifestData []byte) (ManifestInfo, error) {
 	if len(manifest.Items) == 0 {
 		return info, err
 	}
-	info.Thumbnail = manifest.Items[0].Items[0].Items[0].Body.ID
+	info.Thumbnail = manifest.Items[0].Thumbnail[0].ID
+	// info.Thumbnail = manifest.Items[0].Items[0].Items[0].Body.ID
 	info.Label, err = InterfaceToString(manifest.Label)
 	if err != nil {
 		return info, err
