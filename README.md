@@ -42,6 +42,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Diözesan- und Dombibliothek Köln](https://dombibliothek-koeln.de/)
 - [E-codices](https://e-codices.unifr.ch/en)
 - [Europeana](https://www.europeana.eu/en) *
+- [The Frick Collection](https://www.frick.org/) *
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Göttinger Digitalisierungszentrum](https://manifests.sub.uni-goettingen.de/)
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)

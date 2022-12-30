@@ -56,6 +56,10 @@ europeana.txt.gz
 132867
 
 
+frick.txt.gz
+23
+
+
 getty.txt.gz
 113186
 
@@ -189,4 +193,4 @@ ycba.txt.gz
 
 
 total
-5909025
+5909048
