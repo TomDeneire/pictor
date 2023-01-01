@@ -80,6 +80,8 @@ Currently, it features manifests of the following institutions / collections:
 - [Wikidata](https://www.wikidata.org/)
 - [Wellcome Collection](https://wellcomecollection.org/)
 - [Yale Center for British Art](https://britishart.yale.edu/)
+- [Yale Peabody Museum of Natural History](https://peabody.yale.edu/) *
+- [Yale University Art Gallery](https://artgallery.yale.edu/) *
 
 (* = No sample in the discovery tool yet)
 
