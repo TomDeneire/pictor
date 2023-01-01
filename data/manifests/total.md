@@ -4,6 +4,10 @@ allmaps.txt.gz
 142
 
 
+archive_image.txt.gz
+191470
+
+
 bayerische.txt.gz
 2805060
 
@@ -193,4 +197,4 @@ ycba.txt.gz
 
 
 total
-5909048
+6100518
