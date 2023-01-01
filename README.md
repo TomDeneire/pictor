@@ -41,7 +41,6 @@ Currently, it features manifests of the following institutions / collections:
 - [Digitale Sammlungen Universität Frankfurt](https://digital.ub.uni-frankfurt.de)
 - [Diözesan- und Dombibliothek Köln](https://dombibliothek-koeln.de/)
 - [E-codices](https://e-codices.unifr.ch/en)
-- [Europeana](https://www.europeana.eu/en) *
 - [The Frick Collection](https://www.frick.org/) *
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Göttinger Digitalisierungszentrum](https://manifests.sub.uni-goettingen.de/)
@@ -49,6 +48,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Harvard Art MUseums](https://harvardartmuseums.org/)
 - [Iberoamerikanisches Institut Berlin](https://www.iai.spk-berlin.de/startseite.html)
 - [IIIF Universe](https://graph.global/universes/iiif)
+- [Internet Archive](https://archive.org/) *
 - [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/)
 - [Landesbibliothek Oldenburg Digital](https://digital.lb-oldenburg.de)
 - [Manuscriptorium](https://manuscriptorium.com/)
