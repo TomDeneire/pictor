@@ -1,5 +1,17 @@
 # Discovering IIIF Manifests with Pictor
 
+<!--toc:start-->
+- [Discovering IIIF Manifests with Pictor](#discovering-iiif-manifests-with-pictor)
+  - [Idea](#idea)
+  - [Harvesting](#harvesting)
+  - [Indexing](#indexing)
+  - [Web application](#web-application)
+  - [Technical remarks](#technical-remarks)
+  - [Wild plan and call to action](#wild-plan-and-call-to-action)
+  - [See also](#see-also)
+  - [Acknowledgements](#acknowledgements)
+<!--toc:end-->
+
 ![screenshot.png](screenshot.png)
 
 ## Idea
@@ -30,7 +42,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Biblioteca Digital de Cuba](http://iiif.sld.cu/)
 - [Biblioteca Nacional de Portugal - Biblioteca Nacional Digital](https://bndigital.bnportugal.gov.pt/)
 - [Biblioteca Virtual of the Banco de la República de Colombia](https://babel.banrepcultural.org)
-- [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/) *
+- [BVMM (IRHT-CNRS)](https://bvmm.irht.cnrs.fr/) (* incomplete sample, due to connectivity issues)
 - [Digital Bodleian](https://digital.bodleian.ox.ac.uk/)
 - [Digital Collections (Leiden University Libraries)](https://digitalcollections.universiteitleiden.nl/)
 - [Digital Commonwealth](https://digitalcommonwealth.org/)
@@ -41,14 +53,14 @@ Currently, it features manifests of the following institutions / collections:
 - [Digitale Sammlungen Universität Frankfurt](https://digital.ub.uni-frankfurt.de)
 - [Diözesan- und Dombibliothek Köln](https://dombibliothek-koeln.de/)
 - [E-codices](https://e-codices.unifr.ch/en)
-- [The Frick Collection](https://www.frick.org/) *
+- [The Frick Collection](https://www.frick.org/)
 - [Getty Institute](https://iiif.io/guides/guides/search.getty.edu/)
 - [Göttinger Digitalisierungszentrum](https://manifests.sub.uni-goettingen.de/)
 - [Gouda Time Machine](https://www.goudatijdmachine.nl/)
 - [Harvard Art MUseums](https://harvardartmuseums.org/)
 - [Iberoamerikanisches Institut Berlin](https://www.iai.spk-berlin.de/startseite.html)
 - [IIIF Universe](https://graph.global/universes/iiif)
-- [Internet Archive](https://archive.org/) *
+- [Internet Archive](https://archive.org/)
 - [Universitätsbibliothek Heidelberg](https://www.ub.uni-heidelberg.de/)
 - [Landesbibliothek Oldenburg Digital](https://digital.lb-oldenburg.de)
 - [Manuscriptorium](https://manuscriptorium.com/)
