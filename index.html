@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <title>Pictor</title>
     <script type="module" src="index.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 </head>
@@ -15,7 +14,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z70QVH55EJ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() {dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-Z70QVH55EJ');
@@ -33,6 +32,13 @@
         <p></p>
         <div class="card">
             <table class="table">
+                <tr>
+                    <td>Search within collection</td>
+                    <td><select id="collections">
+                            <option value="all" selected>(all collections)</option>
+                        </select></td>
+                    <td></td>
+                </tr>
                 <tr>
                     <td>Search for a keyword</td>
                     <td><input type="text" id="search" /></td>

@@ -43,10 +43,33 @@ input.addEventListener("keypress", function(event) {
     }
 });
 
+// Collections
+
+let collections = new Set();
+Object.values(identifiers).forEach(url => {
+    if (url.startsWith("http")) {
+        let components = url.split("/");
+        collections.add(`${components[0]}//${components[1]}${components[2]}`);
+    }
+})
+let cols_sorted = Array.from(collections)
+cols_sorted.sort()
+
+var select_box = document.getElementById('collections');
+for (var i = 0; i < cols_sorted.length; i++) {
+    var option = document.createElement('option');
+    option.innerHTML = cols_sorted[i];
+    option.value = cols_sorted[i];
+    select_box.appendChild(option);
+}
 
 // Help functions
 
 function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+}
+
+function onlySelected(value, index, self) {
     return self.indexOf(value) === index;
 }
 
@@ -83,6 +106,10 @@ window.submit = function() {
         });
         result = result.filter(onlyUnique);
     };
+    let collection = document.getElementById("collections").value
+    if (collection != "all") {
+        result = result.filter(hash => (identifiers[hash]).startsWith(collection));
+    };
     // Fill result template
     let html = "<table>";
     if (result != null) {
@@ -91,7 +118,11 @@ window.submit = function() {
         result.forEach(hash => {
             let url = identifiers[hash];
             let img = metadata[hash]["T"];
-            let a = `<a target="_blank" href="${img}">
+            let full_img = img;
+            if (img.endsWith("/full/0/default.jpg")) {
+                img = img.replaceAll("/full/0/default.jpg", "/150,/0/default.jpg");
+            }
+            let a = `<a target="_blank" href="${full_img}">
             <img src="${img}" alt="thumbnail" width="150"></a>`;
             let desc = metadata[hash]["L"] + "<p>" + `<a target="_blank" href="${url}">${url}</a>`;
             let viewers = `<p><a target="_blank" href="${Universal + url}">View with Universal</a>
