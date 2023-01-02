@@ -8,6 +8,10 @@ archive_image.txt.gz
 191470
 
 
+art_inst_chicago.txt.gz
+118781
+
+
 bayerische.txt.gz
 2805060
 
@@ -205,4 +209,4 @@ ycba.txt.gz
 
 
 total
-6127434
+6246215
