@@ -52,6 +52,10 @@ dombibliothek_koeln.txt.gz
 1293
 
 
+dublin.txt.gz
+4869
+
+
 ecodices.txt.gz
 2700
 
@@ -192,9 +196,13 @@ wikidata.txt.gz
 196651
 
 
+yart.txt.gz
+22047
+
+
 ycba.txt.gz
 119800
 
 
 total
-6100518
+6127434
