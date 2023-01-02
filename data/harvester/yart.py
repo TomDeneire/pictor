@@ -1,3 +1,4 @@
+import sys
 import requests
 import re
 from urllib import parse
@@ -26,7 +27,8 @@ def find_manifest(url: str) -> None:
         return
 
 
-for i in range(0, 18402):
+for i in range(17000, 18402):
+    #  for i in range(0, 18402):
     url = f"{PREFIX}/collection/search?page={i}"
     try:
         page = requests.get(url)
@@ -37,6 +39,7 @@ for i in range(0, 18402):
                 record_url = PREFIX + href.replace('href="', "").strip('"')
                 if record_url not in URLS:
                     find_manifest(record_url)
+        print(url, file=sys.stderr)
 
     except Exception:
         continue
