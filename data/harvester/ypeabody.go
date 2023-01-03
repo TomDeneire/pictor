@@ -1,3 +1,5 @@
+// Could be improved. Only scraped 25.000 pages (which took +/- 10 hours)
+
 package main
 
 import (

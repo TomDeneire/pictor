@@ -83,7 +83,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Wellcome Collection](https://wellcomecollection.org/)
 - [World Digital Library](https://www.loc.gov/collections/world-digital-library/about-this-collection/)
 - [Yale Center for British Art](https://britishart.yale.edu/)
-- [Yale Peabody Museum of Natural History](https://peabody.yale.edu/) *
+- [Yale Peabody Museum of Natural History](https://peabody.yale.edu/) (* incomplete in repository, due to lack of time)
 - [Yale University Art Gallery](https://artgallery.yale.edu/)
 
 (* = No sample in the discovery tool yet)
