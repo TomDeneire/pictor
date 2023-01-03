@@ -60,13 +60,13 @@ func handlePage(pageUrl string, response *io.ReadCloser) {
 			}
 		}
 	}
-	// logging to stderr to be able to restart from specific page 
+	// logging to stderr to be able to restart from specific page (549)
 	io.WriteString(os.Stderr, pageUrl+"\n")
 
 }
 
 func main() {
-	for i := 548; i < 414174; i++ {
+	for i := 14081; i < 414174; i++ {
 		// for i := 1; i < 414174; i++ {
 		pageUrl := PREFIX + "/search/Search/Results?type=AllFields&page=" + strconv.Itoa(i)
 		response, _ := http.Get(pageUrl)

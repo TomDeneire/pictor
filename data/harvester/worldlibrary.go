@@ -33,8 +33,8 @@ func handlePage(pageUrl string, response *io.ReadCloser) {
 }
 
 func main() {
-    // get number of pages from downloaded dataset, see https://www.loc.gov/item/2020446966/
-	for i := 1; i < 28005; i++ {
+	// get number of pages from downloaded dataset, see https://www.loc.gov/item/2020446966/
+    for i := 1; i < 28005; i++ {
 		pageUrl := PREFIX + strconv.Itoa(i)
 		response, _ := http.Get(pageUrl)
 		go handlePage(pageUrl, &response.Body)

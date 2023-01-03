@@ -26,9 +26,7 @@ def find_manifest(url: str) -> None:
     except Exception:
         return
 
-
-for i in range(17000, 18402):
-    #  for i in range(0, 18402):
+for i in range(0, 18402):
     url = f"{PREFIX}/collection/search?page={i}"
     try:
         page = requests.get(url)

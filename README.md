@@ -36,7 +36,7 @@ Currently, it features manifests of the following institutions / collections:
 
 - [Allmaps](https://allmaps.org)
 - [Anet library network](https://www.uantwerpen.be/en/projects/anet/)
-- [Art Institute of Chicago](https://www.artic.edu/) *
+- [Art Institute of Chicago](https://www.artic.edu/)
 - [Badische Landesbibliothek Karlsruhe](https://www.blb-karlsruhe.de/)
 - [Bayerische Staatsbibliothek (BSB) / Munich Digitization Centre (MDZ)](https://www.digitale-sammlungen.de/en/)
 - [Biblioteca Apostolica Vaticana](https://www.vaticanlibrary.va/)
@@ -76,13 +76,15 @@ Currently, it features manifests of the following institutions / collections:
 - [Staatsbibliothek Berlin](https://staatsbibliothek-berlin.de/en/)
 - [Universitätsbibliothek Leipzig](https://www.ub.uni-leipzig.de/en/home/)
 - [Universität Halle](https://digitale.bibliothek.uni-halle.de/)
+- [University College Dublin Digital Library](https://data.ucd.ie/)
 - [University of Toronto](https://collections.library.utoronto.ca/)
 - [Villanova Digital Library](https://digital.library.villanova.edu/)
 - [Wikidata](https://www.wikidata.org/)
 - [Wellcome Collection](https://wellcomecollection.org/)
+- [World Digital Library](https://www.loc.gov/collections/world-digital-library/about-this-collection/)
 - [Yale Center for British Art](https://britishart.yale.edu/)
 - [Yale Peabody Museum of Natural History](https://peabody.yale.edu/) *
-- [Yale University Art Gallery](https://artgallery.yale.edu/) *
+- [Yale University Art Gallery](https://artgallery.yale.edu/)
 
 (* = No sample in the discovery tool yet)
 
