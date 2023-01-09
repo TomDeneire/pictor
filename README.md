@@ -108,7 +108,7 @@ Requesting and indexing the IIIF manifests was done with a Go script (since Go i
 
 The resulting triple store was then turned into a number of JSON files, including one for the IIIF manifest identifiers and their matching sequential number. I used base-85 numbers for the latter, as this gave me a very efficient way to encode large numbers.
 
-In total, this process only takes a couple of hours for the current sample of ca. 30,000 manifests.
+In total, this process only takes a couple of hours for the current sample of ca. 80,000 manifests.
 
 Workflow, after harvesting and sampling into *_sample.txt files
 
@@ -136,7 +136,7 @@ I also note that this is a completely serverless application, which hosts the ne
 
 ## Wild plan and call to action
 
-Finally, some daydreaming. I made the discovery tool for a sample of the manifests I have collected, but what I would really like to do is push the limits and see how many manifests I can process and still host the index on a static webpage. Currently, for ca. 30,000 manifests, the JSON files are only slightly above 10 MB in total, so this could definitely be scaled up.
+Finally, some daydreaming. I made the discovery tool for a sample of the manifests I have collected, but what I would really like to do is push the limits and see how many manifests I can process and still host the index on a static webpage. Currently, for ca. 80,000 manifests, the JSON files are only slightly above 25 MB in total, so this could definitely be scaled up.
 
 So if you or your instution want to participate in this experiment, or simply deposit your IIIF manifests in the central repository, please get in touch with me.
 
