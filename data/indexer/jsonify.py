@@ -130,6 +130,8 @@ def make_identifiers():
     with open(DB, "r") as reader:
         for line in reader:
             manifest = line.split(" ")[0]
+            if not manifest.startswith("http"):
+                continue
             if manifest in identifiers:
                 continue
             count += 1
