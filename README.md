@@ -28,7 +28,7 @@ The IIIF documentation does have an interesting [Guide to finding IIIF resources
 - [Digitized Medieval Manuscript Database](https://digitizedmedievalmanuscripts.org/data#) (which allows for filtering by IIIF compliancy)
 - [The IIIF Universe](https://graph.global/universes/iiif)
 
-With that information I was able to scrape several of these collections and aggregate them into a corpus of over 6,000,000 IIIF manifests. The resulting lists are available in this repository.
+With that information I was able to scrape several of these collections and aggregate them into a corpus of about 6.5 million IIIF manifests. The resulting lists are available in this repository.
 
 This repository has two purposes. One it offers a place to **store IIIF collections** and make them available for others. Two it uses those collections to host a [**discovery tool**](https://tomdeneire.github.io/pictor/) with a sample of them.
 
@@ -85,6 +85,7 @@ Currently, it features manifests of the following institutions / collections:
 - [Yale Center for British Art](https://britishart.yale.edu/)
 - [Yale Peabody Museum of Natural History](https://peabody.yale.edu/) (* incomplete in repository, due to lack of time)
 - [Yale University Art Gallery](https://artgallery.yale.edu/)
+- [Zeitungsportal NRW](https://zeitpunkt.nrw/)
 
 (* = No sample in the discovery tool yet)
 
