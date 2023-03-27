@@ -20,7 +20,7 @@ Discovering [IIIF](https://iiif.io/) resources can be challenging.
 
 Although the protocol does specify a dedicated [Discovery API](https://iiif.io/api/discovery/1.0/) it is not often implemented by institutions. (At [Anet](https://anet.be) we are guilty of the same). Moreover, this API has no straightforward way to obtain a full collection. It is certainly not as straightforward as with [OAI-PMH](https://www.openarchives.org/pmh/) for instance, that offers the verb `ListIdentifiers`.
 
-The IIIF documentation does have an interesting [Guide to finding IIIF resources](https://iiif.io/guides/finding_resources/) which features a list of IIIF collections. Similar sources are:
+The IIIF documentation does have an interesting [Guide to finding IIIF resources](https://iiif.io/guides/finding_resources/), which features a list of IIIF collections. Similar sources are:
 
 - [IIIF Discovery Registry](https://registry.iiif.io/)
 - [Biblissima IIIF Collections - Manuscripts & Rare Books](https://iiif.biblissima.fr/collections/)
