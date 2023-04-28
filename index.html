@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Pictor</title>
     <script type="module" src="index.js"></script>
-    <link href="bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-</head>
+    <link href="bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+  </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z70QVH55EJ"></script>
-<script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-Z70QVH55EJ"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-Z70QVH55EJ');
-</script>
+    gtag("config", "G-Z70QVH55EJ");
+  </script>
 
-<body>
+  <body>
     <div class="card-body" id="page">
-        <h1>
-            Pictor
-        </h1>
-        <h2>A discovery tool for IIIF manifests</h2>
-        <a target="_blank" href="https://iiif.io/"><img src="iiif.png" alt="thumbnail" width="70"></a>
-        <div>Search through <span id="total"></span> manifests</div>
-        <section><a href="https://github.com/TomDeneire/pictor#readme" target="_blank">About</a></section>
+      <h1>Pictor</h1>
+      <h2>A discovery tool for IIIF manifests</h2>
+      <a target="_blank" href="https://iiif.io/"
+        ><img src="iiif.png" alt="thumbnail" width="70"
+      /></a>
+      <div>Search through <span id="total"></span> manifests</div>
+      <section>
+        <a href="https://github.com/TomDeneire/pictor#readme" target="_blank"
+          >Pictor</a
+        >
+        is a project by ⚡
+        <a href="https://tomdeneire.github.io" target="_blank"
+          >Tom Deneire Consulting</a
+        >
+      </section>
+      <p></p>
+      <div class="card">
+        <table class="table">
+          <tr>
+            <td>Search within collection</td>
+            <td>
+              <select id="collections">
+                <option value="all" selected>(all collections)</option>
+              </select>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Search for a keyword</td>
+            <td><input type="text" id="search" /></td>
+            <td>e.g. <i>lipsius</i> or <i>lipsius + politica</i></td>
+          </tr>
+          <tr>
+            <td>Or choose one of these random keywords</td>
+            <td
+              class="link-primary"
+              style="cursor: pointer"
+              id="suggestions"
+            ></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div>
         <p></p>
-        <div class="card">
-            <table class="table">
-                <tr>
-                    <td>Search within collection</td>
-                    <td><select id="collections">
-                            <option value="all" selected>(all collections)</option>
-                        </select></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Search for a keyword</td>
-                    <td><input type="text" id="search" /></td>
-                    <td>e.g. <i>lipsius</i> or <i>lipsius + politica</i></td>
-                </tr>
-                <tr>
-                    <td>Or choose one of these random keywords</td>
-                    <td class="link-primary" style="cursor: pointer;" id="suggestions"></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <p></p>
-            <button id="submit" onClick="submit();" class="btn-outline-secondary">Submit</button>
-            <p></p>
-        </div>
-        <div>
-            <table id="result" class="table-sm table-bordered">
-            </table>
-        </div>
+        <button id="submit" onClick="submit();" class="btn-outline-secondary">
+          Submit
+        </button>
+        <p></p>
+      </div>
+      <div>
+        <table id="result" class="table-sm table-bordered"></table>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
