@@ -129,7 +129,7 @@ def make_identifiers():
 
     with open(DB, "r") as reader:
         for line in reader:
-            manifest = line.split(" ")[0]
+            manifest = line.split(" ")[0].strip()
             # some earlier data sets were processed with invalid manifests!
             #  if not manifest.startswith("http"):
             #      continue
@@ -153,8 +153,10 @@ def replace_manifests():
 
     with open(DB, "r") as reader, open("tmp.txt", "w") as writer:
         for line in reader:
-            manifest = line.split(" ")[0]
-            writer.write(line.replace(manifest, identifiers[manifest]))
+            line = line.strip()
+            manifest = line.split(" ")[0].strip()
+            line = line.replace(manifest, identifiers[manifest])
+            writer.write(line+"\n")
     shutil.copy(DB, "original_db.txt")
     os.remove(DB)
     os.rename("tmp.txt", DB)
