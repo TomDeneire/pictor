@@ -47,7 +47,7 @@
           <tr>
             <td>Search within collection</td>
             <td>
-              <select id="collections">
+              <select id="collections" onChange="submit()">
                 <option value="all" selected>(all collections)</option>
               </select>
             </td>
@@ -67,6 +67,28 @@
             ></td>
             <td></td>
           </tr>
+          <tr>
+            <td>Viewer</td>
+            <td>
+              <select id="viewer" onChange="submit();">
+                <option
+                  value="https://uv-v4.netlify.app/#?c=&m=&s=&cv=&manifest="
+                  selected
+                >
+                  Universal
+                </option>
+                <option value="https://projectmirador.org/embed/?iiif-content=">
+                  Mirador
+                </option>
+                <option
+                  value="https://samvera-labs.github.io/clover-iiif/?iiif-content="
+                >
+                  Clover
+                </option>
+              </select>
+            </td>
+            <td></td>
+          </tr>
         </table>
       </div>
       <div>
@@ -77,7 +99,7 @@
         <p></p>
       </div>
       <div>
-        <table id="result" class="table-sm table-bordered"></table>
+        <div id="result"></div>
       </div>
     </div>
   </body>
